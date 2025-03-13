@@ -10,6 +10,14 @@ cmake ..
 make -j$(nproc)
 ```
 
+or use Ninja instead of Makefiles:
+
+```bash
+mkdir build && cd build
+cmake -G Ninja ..
+ninja
+```
+
 ## Clang / GCC
 
 ### Check
