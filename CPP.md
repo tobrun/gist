@@ -6,16 +6,16 @@ Collection of bash commands relate to building C++ projects.
 
 ```bash
 mkdir build && cd build
-cmake ..
-make -j$(nproc)
+cmake -G Ninja ..
+ninja
 ```
 
-or use Ninja instead of Makefiles:
+or use Makefiles instead of Ninja:
 
 ```bash
 mkdir build && cd build
-cmake -G Ninja ..
-ninja
+cmake ..
+make -j$(nproc)
 ```
 
 ## Clang / GCC
@@ -45,9 +45,18 @@ sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++ 90
 
 ### Default
 
+Switch between GCC and Clang
+
 ```bash
 sudo update-alternatives --config c
 sudo update-alternatives --config c++
+```
+
+Switch between used GCC versions
+
+```bash
+sudo update-alternatives --config g++
+sudo update-alternatives --config gcc
 ```
 
 ### Validate
