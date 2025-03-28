@@ -18,6 +18,12 @@ cmake ..
 make -j$(nproc)
 ```
 
+### Disable warnings
+
+```bash
+CXXFLAGS="-w" cmake . -B build
+```
+
 ## Clang / GCC
 
 ### Check
