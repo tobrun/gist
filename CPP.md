@@ -5,17 +5,8 @@ Collection of bash commands relate to building C++ projects.
 ## CMake
 
 ```bash
-mkdir build && cd build
-cmake -G Ninja ..
-ninja
-```
-
-or use Makefiles instead of Ninja:
-
-```bash
-mkdir build && cd build
-cmake ..
-make -j$(nproc)
+cmake . -B build
+cmake --build build -j ${nproc}
 ```
 
 ### Disable warnings
