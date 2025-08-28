@@ -1,0 +1,1 @@
+Interactive rebase branch: $ARGUMENTS (default: origin main) into current branch. Resolve conflicts if any occur.

@@ -1,0 +1,54 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit",
+      "Read",
+      "Write",
+      "Create",
+      "Update",
+      "Find",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push origin feature:*)",
+      "Bash(git push origin fix:*)",
+      "Bash(git branch:*)",
+      "Bash(git status:*)",
+      "Bash(git pull:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(gh pr:*)",
+      "Bash(supabase:*)",
+      "WebFetch",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(cd:*)",
+      "Bash(find:*)",
+      "Bash(gradlew:*)",
+      "Bash(ninja:*)",
+      "Bash(cmake:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr status:*)"
+    ],
+    "deny": [
+      "Bash(git push origin main:*)",
+      "Bash(git push origin master:*)",
+      "Bash(rm -rf:*)"
+    ]
+  },
+  "model": "opusplan",
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "notify-send 'Claude Code' \"$CLAUDE_NOTIFICATION\""
+          }
+        ]
+      }
+    ]
+  }
+}
