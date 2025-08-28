@@ -1,0 +1,73 @@
+<keymap version="1" name="Default copy" parent="$default">
+  <action id="ActivateLogcatToolWindow">
+    <keyboard-shortcut first-keystroke="alt 6" />
+  </action>
+  <action id="ActivateTODOToolWindow" />
+  <action id="AddToFavoritesPopup" />
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="ctrl alt left" />
+    <mouse-shortcut keystroke="button4" />
+    <keyboard-shortcut first-keystroke="ctrl open_bracket" />
+  </action>
+  <action id="Debug">
+    <keyboard-shortcut first-keystroke="alt d" />
+  </action>
+  <action id="DirDiffMenu.SynchronizeDiff" />
+  <action id="EditorCodeBlockEnd" />
+  <action id="EditorCodeBlockStart" />
+  <action id="ExportToTextFile" />
+  <action id="Find">
+    <keyboard-shortcut first-keystroke="ctrl f" />
+    <keyboard-shortcut first-keystroke="alt f3" />
+    <keyboard-shortcut first-keystroke="alt f" />
+  </action>
+  <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
+    <keyboard-shortcut first-keystroke="shift alt f" />
+  </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="ctrl alt right" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="ctrl close_bracket" />
+  </action>
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="alt insert" />
+    <keyboard-shortcut first-keystroke="alt n" />
+  </action>
+  <action id="GotoClass">
+    <keyboard-shortcut first-keystroke="alt o" />
+  </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="shift alt enter" />
+    <keyboard-shortcut first-keystroke="shift alt o" />
+  </action>
+  <action id="MethodHierarchy.OverrideMethodAction" />
+  <action id="OverrideMethods" />
+  <action id="Refactorings.QuickListPopupAction">
+    <keyboard-shortcut first-keystroke="shift ctrl alt t" />
+    <keyboard-shortcut first-keystroke="alt m" />
+  </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+    <keyboard-shortcut first-keystroke="alt l" />
+  </action>
+  <action id="Replace">
+    <keyboard-shortcut first-keystroke="alt r" />
+    <keyboard-shortcut first-keystroke="shift ctrl r" />
+  </action>
+  <action id="ReplaceInPath">
+    <keyboard-shortcut first-keystroke="shift alt r" />
+  </action>
+  <action id="RerunTests" />
+  <action id="Run">
+    <keyboard-shortcut first-keystroke="shift f10" />
+    <keyboard-shortcut first-keystroke="ctrl r" />
+  </action>
+  <action id="UpdateRunningApplication" />
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl f10" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="ctrl alt f10" />
+  </action>
+</keymap>
