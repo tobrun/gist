@@ -1,3 +1,5 @@
+# Gist
+
 🛠️ Useful Commands & Scripts
 
 This repository is a personal collection of commands, scripts, notebooks and snippets I use on a daily basis.
@@ -11,8 +13,10 @@ In general, they should also work on macOS, but you may need minor adjustments (
 📂 Structure
 
 All command related topics are contained within their own Markdown files.
- - `CPP.md` -> C++ build commands
- - `scripts\` -> Collection of scripts 
+ - `commands\` -> Collection of commands
+ - `scripts\` -> Collection of scripts
+ - `configs\` -> Collection of configurations
+ - `notebooks\` -> Collection of Jupyter notebooks
 
 🔍 How to use
 
