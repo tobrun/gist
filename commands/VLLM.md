@@ -1,11 +1,41 @@
 # vLLM configurations
 
+## vLLM inference of Qwen3-235B-A22B-Thinking-2507-AWQ
+
+```bash
+vllm serve Qwen3-235B-A22B-Thinking-2507-AWQ  --enable-expert-parallel --tensor-parallel-size 4 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser hermes
+```
+
+## vLLM inference of GLM-4.5-Ar-FP8
+
+```bash
+vllm serve GLM-4.5-Air-FP8 --tensor-parallel-size 4 --tool-call-parser glm45  --reasoning-parser glm45  --enable-auto-tool-choice
+```
+
+## vLLM inference of GLM-4.5V-AWQ
+
+```bash
+vllm serve GLM-4.5V-AWQ \
+     --tensor-parallel-size 4 \
+     --tool-call-parser glm45 \
+     --reasoning-parser glm45 \
+     --enable-auto-tool-choice \
+     --allowed-local-media-path / \
+     --media-io-kwargs '{"video": {"num_frames": -1}}'
+```
+
+## vLLM inference of GPT-OSS
+
+```bash
+vllm serve gpt-oss-120b --tensor-parallel-size 4
+```
+
 ## vLLM inference of Gemma-3
 
 This will run Gemma-3-27b-it against 4 GPUs and have proper tool calling setup in place.
 
 ```bash
-vllm serve gemma-3-27b-it --tensor-parallel-size 4 --task generate --enable-auto-tool-choice --tool-call-parser pythonic --chat-template jinja/tool_chat_template_gemma_pythonic.jinja 
+vllm serve gemma-3-27b-it --tensor-parallel-size 4 --task generate --enable-auto-tool-choice --tool-call-parser pythonic --chat-template jinja/tool_chat_template_gemma_pythonic.jinja
 ```
 
 with jinja/tool_chat_template_gemma_pythonic.jinja content:
@@ -100,7 +130,7 @@ with jinja/tool_chat_template_gemma_pythonic.jinja content:
 ## vLLM inference of cogito-v1-preview-llama-70B
 
 ```bash
-vllm serve cogito-v1-preview-llama-70B --tensor-parallel-size 4 --task generate --enable-auto-tool-choice --tool-call-parser llama3_json --chat-template jinja/tool_chat_template_llama3.2_json.jinja 
+vllm serve cogito-v1-preview-llama-70B --tensor-parallel-size 4 --task generate --enable-auto-tool-choice --tool-call-parser llama3_json --chat-template jinja/tool_chat_template_llama3.2_json.jinja
 ```
 
 This is using the tool chat template found in the vLLM repo.
