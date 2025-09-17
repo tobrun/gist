@@ -4,7 +4,13 @@
 
 ```bash
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
-vllm serve Qwen3-Next-80B-A3B-Instruct --enable-expert-parallel --tensor-parallel-size 4 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser hermes --speculative-config '{"method":"qwen3_next_mtp","num_speculative_tokens":2}' --max-model-len 262144
+vllm serve Qwen3-Next-80B-A3B-Instruct --enable-expert-parallel --tensor-parallel-size 4 --enable-auto-tool-choice --tool-call-parser hermes --speculative-config '{"method":"qwen3_next_mtp","num_speculative_tokens":2}' --max-model-len 262144
+```
+
+## vLLM inference of Qwen3-Next-80B-A3B-Thinking
+
+```bash
+vllm serve Qwen3-Next-80B-A3B-Thinking --enable-expert-parallel --tensor-parallel-size 4 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser hermes
 ```
 
 
