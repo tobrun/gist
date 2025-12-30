@@ -1,5 +1,11 @@
 # vLLM configurations
 
+## vLLM inference of MiniMax-M2.1-AWQ-4bit
+
+```bash
+vllm serve MiniMax-M2.1-AWQ-4bit   --tensor-parallel-size 4   --max-model-len 160000   --tool-call-parser minimax_m2   --reasoning-parser minimax_m2_append_think   --enable-auto-tool-choice   --trust-remote-code
+```
+
 ## vLLM inference of Qwen3-Next-80B-A3B-Instruct
 
 ```bash
@@ -12,7 +18,6 @@ vllm serve Qwen3-Next-80B-A3B-Instruct --enable-expert-parallel --tensor-paralle
 ```bash
 vllm serve Qwen3-Next-80B-A3B-Thinking --enable-expert-parallel --tensor-parallel-size 4 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser hermes
 ```
-
 
 ## vLLM inference of Qwen3-235B-A22B-Thinking-2507-AWQ
 
